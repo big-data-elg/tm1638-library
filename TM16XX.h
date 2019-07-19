@@ -25,6 +25,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 	#include "WProgram.h"
 #endif
 
+#ifdef ESP8266
+#define min _min
+#define max _max
+#endif
+#define BUFFER_LENGTH 64
+
 #include "TM16XXFonts.h"
 
 class TM16XX
